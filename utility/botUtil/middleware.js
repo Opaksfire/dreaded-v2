@@ -9,7 +9,6 @@ const middleware = async (context, next) => {
     if (!isAdmin) {
         return m.reply("You need admin privileges");
     }
-    }
 
     await next(); // Proceed to the next function (main handler)
 };
